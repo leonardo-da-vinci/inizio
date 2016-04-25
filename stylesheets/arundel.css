@@ -1,13 +1,17 @@
+@import url(http://db.onlinewebfonts.com/c/82f98f043f95a149b7951e8e8f2e974d?family=PFDaVinciScriptW01-Inked);
+
 * {
   box-sizing: border-box; }
 
 body {
+  background-color: #DEDBD2;
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #8D371E; }
+  font-size: 12pt;
+  line-height: 1.0;
+  color: #8D371E; 
+}
 
 a {
   color: #8D371E;
@@ -33,6 +37,12 @@ a {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
+  
+#teaser {
+  position: absolute;
+  right: 6px;
+  top: 280px;
+}
 
 @media screen and (min-width: 64em) {
   .btn {
@@ -60,87 +70,31 @@ a {
   background-image: linear-gradient(120deg, #155799, #159957); }
 */
 .page-header {
-  color: #8D371E;
+  font-family: "PFDaVinciScriptW01-Inked";
+  background-image: url('../res/leo000.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #5B5759;
   text-align: center;
-  background-color: #FFFFFD;
- /* background-image: url('sfondo03.jpg');*/
-}
-.page-header table {
-	width: 100%;
-	border-collapse: collapse;
-	border: none;
-}
-.t {
-  background-image: url('t.jpg');
-  background-repeat: repeat-x; 
-  background-size: contain;
-	height: 48px;
-}
-.b {
-  background-image: url('b.jpg');
-  background-repeat: repeat-x; 
-  background-size: contain;
-	height: 48px;
-}
-.l {
-  background-image: url('l.jpg');
-  background-repeat: repeat-y; 
-  background-size: contain;
-	width: 48px;
-}
-.r {
-  background-image: url('r.jpg');
-  background-repeat: repeat-y; 
-  background-size: contain;
-	width: 48px;
-}
-.tl {
-  background-image: url('tl.jpg');
-  background-repeat: no-repeat; 
-  background-size: contain;
-	width: 48px;
-}
-.bl {
-  background-image: url('bl.jpg');
-  background-repeat: no-repeat; 
-  background-size: contain;
-	width: 48px;
-}
-.br {
-  background-image: url('br.jpg');
-  background-repeat: no-repeat; 
-  background-size: contain;
-	width: 48px;
-}
-.tr {
-  background-image: url('tr.jpg');
-  background-repeat: no-repeat; 
-  background-size: contain;
-	width: 48px;
-}
-.c {
-  background-image: url('sfondo03.jpg');
-  background-repeat: repeat; 
 }
 
-.perg {
+.page-header h1 {
+  font-weight: normal;
+}
+
+.codice {
   padding: 60px;
-  background-image: url('tl.jpg'), url('tr.jpg'),
-    url('bl.jpg'), url('br.jpg'),
-    url('t.jpg'), url('b.jpg'),
-    url('l.jpg'), url('r.jpg'),url('sfondo03.jpg');
+  background-image: url('tl.png'), url('tr.png'),
+    url('bl.png'), url('br.png'),
+    url('t.png'), url('b.png'),
+    url('l.png'), url('r.png'),url('c.png');
   background-repeat: no-repeat, no-repeat,
     no-repeat, no-repeat,
     repeat-x, repeat-x, repeat-y, repeat-y, repeat; 
   background-position: top left, top right,
     bottom left, bottom right,
-    top, bottom, left, right;
+    top, bottom, left, right, center;
 }
-.logo {
-  background-image: url('../res/leo000.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 135px; }
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -167,7 +121,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .project-name {
-    font-size: 3.25rem; } }
+    font-size: 4rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
@@ -178,13 +132,13 @@ a {
     font-size: 1.75rem; } }
 
 .project-tagline {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   font-weight: normal;
   opacity: 0.7; }
 
 @media screen and (min-width: 64em) {
   .project-tagline {
-    font-size: 1.25rem; } }
+    font-size: 3rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-tagline {
@@ -199,10 +153,12 @@ a {
 .main-content img {
   max-width: 100%; }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  font-family: "PFDaVinciScriptW01-Inked";
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957; }
+  font-size: 3rem;
+  color: #5B5759; }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
@@ -315,13 +271,16 @@ a {
     font-size: 1rem; } }
 
 .site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding-top: 0.2rem;
+  margin-top: 0.2rem;
   border-top: solid 1px #eff0f1; }
 
 .site-footer-owner {
+  font-size: 0.8rem;
   display: block;
-  font-weight: bold; }
+  font-weight: normal;
+  text-align: center;
+}
 
 .site-footer-credits {
   color: #819198; }
@@ -336,4 +295,4 @@ a {
 
 @media screen and (max-width: 42em) {
   .site-footer {
-    font-size: 0.9rem; } }
+    font-size: 0.6rem; } }
