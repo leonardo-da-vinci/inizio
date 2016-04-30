@@ -1,23 +1,25 @@
 @import url(http://db.onlinewebfonts.com/c/82f98f043f95a149b7951e8e8f2e974d?family=PFDaVinciScriptW01-Inked);
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  background-color: #DEDBD2;
+  background-color: #F1E1BD;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12pt;
+  font-family: "Lucida Handwriting", "Monotype Corsiva", Zapfino, "URW Chancery L";
   line-height: 1.0;
   color: #8D371E; 
 }
 
 a {
   color: #8D371E;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 .btn {
   display: inline-block;
@@ -28,62 +30,45 @@ a {
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
-  .btn + .btn {
-    margin-left: 1rem; }
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.btn + .btn {
+  margin-left: 1rem;
+}
 
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3); }
+  border-color: rgba(255, 255, 255, 0.3);
+}
   
 #teaser {
   position: absolute;
-  right: 6px;
-  top: 280px;
 }
 
-@media screen and (min-width: 64em) {
-  .btn {
-    padding: 0.75rem 1rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .btn {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem; } }
-
-@media screen and (max-width: 42em) {
-  .btn {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem; }
-    .btn + .btn {
-      margin-top: 1rem;
-      margin-left: 0; } }
-/*
 .page-header {
-  color: #fff;
-  text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
-*/
-.page-header {
-  font-family: "PFDaVinciScriptW01-Inked";
   background-image: url('../res/leo002.png');
   background-size: contain;
   background-repeat: no-repeat;
-  color: #5B5759;
-  text-align: center;
+  color: #8D371E;
 }
 
-.page-header h1 {
+.project-name {
+  margin: 0px;
+  padding: 0px;
   font-weight: normal;
+  position: absolute;
+}
+
+.project-tagline {
+  position: absolute;
+  font-weight: normal;
+  opacity: 0.7; 
 }
 
 .codice {
-  padding: 60px;
+  padding: 12px;
   background-image: url('tl.png'), url('tr.png'),
     url('bl.png'), url('br.png'),
     url('t.png'), url('b.png'),
@@ -94,59 +79,10 @@ a {
   background-position: top left, top right,
     bottom left, bottom right,
     top, bottom, left, right, center;
+  font-family: "PFDaVinciScriptW01-Inked", "Lucida Handwriting",
+    "Monotype Corsiva", Zapfino, "URW Chancery L";
+  min-height: 360px;
 }
-
-@media screen and (min-width: 64em) {
-  .page-header {
-    padding: 0rem; /*5rem 6rem; */
-  }
-}
-    
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .page-header {
-    padding: 0rem; /*3rem 4rem;*/ 
-  }
-}
-
-@media screen and (max-width: 42em) {
-  .page-header {
-    padding: 0rem; /* 2rem 1rem; */
-  }
-}
-
-.project-name {
-  margin-top: 0;
-  margin-bottom: 0.1rem; 
-}
-
-@media screen and (min-width: 64em) {
-  .project-name {
-    font-size: 4rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .project-name {
-    font-size: 2.25rem; } }
-
-@media screen and (max-width: 42em) {
-  .project-name {
-    font-size: 1.75rem; } }
-
-.project-tagline {
-  margin-bottom: 0rem;
-  font-weight: normal;
-  opacity: 0.7; }
-
-@media screen and (min-width: 64em) {
-  .project-tagline {
-    font-size: 3rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .project-tagline {
-    font-size: 1.15rem; } }
-
-@media screen and (max-width: 42em) {
-  .project-tagline {
-    font-size: 1rem; } }
 
 .main-content :first-child {
   margin-top: 0; }
@@ -253,46 +189,135 @@ a {
   background-color: #eff0f1;
   border: 0; }
 
-@media screen and (min-width: 64em) {
-  .main-content {
-    max-width: 64rem;
-    padding: 0rem; /*2rem 6rem;*/
-    margin: 0 auto;
-    font-size: 1.1rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .main-content {
-    padding: 0rem; /*2rem 4rem;*/
-    font-size: 1.1rem; } }
-
-@media screen and (max-width: 42em) {
-  .main-content {
-    padding: 0rem; /*2rem 1rem;*/
-    font-size: 1rem; } }
-
 .site-footer {
-  padding-top: 0.2rem;
-  margin-top: 0.2rem;
-  border-top: solid 1px #eff0f1; }
+  padding-top: 0rem;
+  margin-top: 0rem;
+  /* border-top: solid 1px #eff0f1; */
+  text-align: center;
+  font-weight: normal;
+}
 
 .site-footer-owner {
-  font-size: 0.8rem;
   display: block;
-  font-weight: normal;
-  text-align: center;
 }
 
 .site-footer-credits {
   color: #819198; }
 
+/*
+.page-header {
+  color: #fff;
+  text-align: center;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957); }
+*/
+
+
 @media screen and (min-width: 64em) {
+  .btn {
+    padding: 0.75rem 1rem; 
+  }
+  .page-header {
+    padding: 0rem; /*5rem 6rem; */
+    min-height: 120px;
+  }
+  .project-name {
+    font-size: 5rem;
+    top: 0px;
+    left: 80px; 
+  }
+  .project-tagline {
+    font-size: 3rem; 
+    top: 15px;
+    left: 143px; 
+  } 
+  .main-content {
+    max-width: 64rem;
+    padding: 0rem; /*2rem 6rem;*/
+    margin: 0 auto;
+    font-size: 2rem; 
+  }
+  .main-content :nth-child(2) {
+    padding-right: 160px;
+  }
   .site-footer {
-    font-size: 1rem; } }
+    font-size: 1.2rem; 
+  }
+  #teaser {
+    right: 8px;
+    top: 140px;
+    height: 155px;
+  }
+}
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
+  .btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem; 
+  }
+  .page-header {
+    padding: 0rem; /*3rem 4rem;*/ 
+    min-height: 80px;
+  }
+  .project-name {
+    font-size: 4rem; 
+    top: 0px;
+    left: 60px; 
+  }
+  .project-tagline {
+    font-size: 2rem; 
+    top: 18px;
+    left: 132px; 
+  }   
+  .main-content {
+    padding: 0rem; /*2rem 4rem;*/
+    font-size: 2rem; 
+  }
   .site-footer {
-    font-size: 1rem; } }
+    font-size: 1rem; 
+  }
+  #teaser {
+    right: 8px;
+    top: 100px;
+    height: 140px;
+  }
+}
 
 @media screen and (max-width: 42em) {
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem; 
+  }
+  .btn + .btn {
+    margin-top: 1rem;
+    margin-left: 0; 
+  }
+  .page-header {
+    padding: 0rem; /* 2rem 1rem; */
+    min-height: 60px;
+  }  
+  .project-name {
+    font-size: 3rem;
+    top: 0px;
+    left: 46px; 
+  }
+  .project-tagline {
+    font-size: 1.5rem; 
+    top: 15px;
+    left: 98px; 
+  }
   .site-footer {
-    font-size: 0.6rem; } }
+    font-size: 1rem; 
+  }
+  .main-content {
+    padding: 0rem; /*2rem 1rem;*/
+    font-size: 1rem; 
+  }
+  #teaser {
+    right: 8px;
+    top: 60px;
+    height: 120px;
+  }
+}
